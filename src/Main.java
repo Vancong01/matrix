@@ -6,9 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        int n = 0, count = 0;
-        int[][] arrayTwoWay;
-        String[] arr;
+        int n = 0;
         String data = "";
         try {
             File myObj = new File("input.txt");
@@ -18,7 +16,6 @@ public class Main {
             boolean isMatrix = true;
             boolean isMatrix1 = true;
             int matrixIndex = 0;
-            String backValue = "";
             while (myReader.hasNextLine()) {
                 data = myReader.nextLine();
                 if (data != " ") {
