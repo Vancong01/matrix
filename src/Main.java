@@ -7,39 +7,39 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
         int n = 0;
-        String data = "";
+        String readWord = "";
         try {
-            File myObj = new File("input.txt");
+            File file = new File("input.txt");
             FileWriter myWriter = new FileWriter("output.txt");
-            Scanner myReader = new Scanner(myObj);
+            Scanner scanner = new Scanner(file);
             boolean read_OneLine = true;
             boolean isMatrix = true;
-            boolean isMatrix1 = true;
+            boolean isMatrix_noWord = true;
             int matrixIndex = 0;
-            while (myReader.hasNextLine()) {
-                data = myReader.nextLine();
-                if (data != " ") {
+            while (scanner.hasNextLine()) {
+                readWord = scanner.nextLine();
+                if (readWord != " ") {
                     if (read_OneLine) {
-                        isMatrix1 = true;
-                        n = data.split("\\s+").length;
+                        isMatrix_noWord = true;
+                        n = readWord.split("\\s+").length;
                         matrixIndex = 1;
                     } else {
                         matrixIndex++;
-                        if (data.split("\\s+").length != n) {
+                        if (readWord.split("\\s+").length != n) {
                             isMatrix = false;
                         }
                     }
                     String regex = "^[0-9\\s+]+$";
-                    if (!data.matches(regex)) {
-                        isMatrix1 = false;
+                    if (!readWord.matches(regex)) {
+                        isMatrix_noWord = false;
                     }
                     read_OneLine = false;
-                    myWriter.write(data);
+                    myWriter.write(readWord);
                     myWriter.write("\n");
                 }
             }
 
-            if (!isMatrix1) {
+            if (!isMatrix_noWord) {
                 myWriter.write("\n");
                 myWriter.write("Không phải ma trận vì chứa kí tự không phải là số");
                 myWriter.write("\n");
@@ -60,7 +60,7 @@ public class Main {
                 myWriter.write("\n");
                 myWriter.write("=======================================================");
             }
-            myReader.close();
+            scanner.close();
             myWriter.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
