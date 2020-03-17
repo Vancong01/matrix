@@ -1,0 +1,126 @@
+.header {
+    padding: 3px;
+    background: bisque;
+    width: 100%;
+    height: 50px;
+}
+ .header-left {
+    background-color: #2b30ff;
+    width: 30%;
+    float: left;
+    height: 50px;
+}
+ .header-right {
+    width: 70%;
+    background-color: rgba(148, 238, 255, 0.39);
+    float: left;
+    height: 50px;
+}
+p.header-left-left{
+    margin: 10px;
+}
+p.header-right-right{
+    margin: 10px;
+}
+.footer{
+    background: aqua;
+    width: 100%;
+    height: 50px;
+    clear: left;
+}
+.footer-left{
+    background-color: #2b30ff;
+    width: 20%;
+    float: left;
+    height: 50px;
+}
+.footer-right{
+    width: 80%;
+    background-color: orange;
+    float: left;
+    height: 50px;
+}
+p.footer-left-left{
+    text-align: center;
+    margin: 10px;
+}
+p.footer-right-right{
+    text-align: center;
+    margin: 10px;
+}
+.main-content .left{
+    float: left;
+    width: 70%;
+    height: 500px;
+    background: greenyellow;
+}
+ .main-content .right{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background: mediumslateblue;
+}
+.table-right{
+    width: 100%;
+    border: 1px #ff0f26;
+}
+.left-left-div1{
+    background-color: green;
+    width: 30%;
+    float: left;
+}
+.left-left-div2{
+    background-color: #2b30ff;
+    width:70%;
+    float: left;
+}
+.left-table1{
+    width: 100%;
+}
+.left-tr1{
+    background-color: #2b30ff;
+}
+.left-tr2{
+    background-color: grey;
+}
+.left-left-main3{
+     width: 100%;
+     height: 30%;
+    background-color: white;
+ }
+.left-left-main4{
+    width: 100%;
+    height: 50%;
+    background-color: orange;
+}
+.left-left-div3{
+     float: left;
+     width: 33%;
+    text-align: center;
+ }
+.left-left-div4{
+    float: left;
+    width: 34%;
+    text-align: center;
+}
+.left-left-div5{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.tintuc{
+    width: 100%;
+}
+.tintuc-button{
+    width: 50%;
+    float: left;
+}
+.tintuc-text{
+    width: 50%;
+    float: left;
+}
+.text-center{
+    text-align: center;
+    clear: left;
+}
+
